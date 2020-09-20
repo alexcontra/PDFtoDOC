@@ -1,5 +1,7 @@
 package GUI;
 
+import generateDOC.generate;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,7 +10,7 @@ public class createGui implements ActionListener {
     public JFrame mainFrame = new JFrame();
     public JPanel mainPanel = new JPanel();
     public JTextField numeleFisieruluiPDF = new JTextField();
-    public JLabel nume = new JLabel("Name of file+path");
+    public JLabel nume = new JLabel("Name of file");
     public JButton generate = new JButton("Generate Word Document");
     public createGui()
     {
@@ -34,7 +36,7 @@ public class createGui implements ActionListener {
     public void actionPerformed(ActionEvent actionEvent) {
             if(actionEvent.getSource()==generate)
             {
-
+                generate g = new generate(numeleFisieruluiPDF.getText());
             }
     }
 }
