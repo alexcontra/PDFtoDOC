@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class createGui {
     public JFrame mainFrame = new JFrame();
-    public JPanel mainPanel = JPanel();
+    public JPanel mainPanel = new JPanel();
 
     public createGui()
     {
